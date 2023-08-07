@@ -76,7 +76,6 @@ const pay = async (req) => {
 
           result = `Your payment was successful`;
         } catch (error) {
-            console.log(error);
           await transaction.rollback();
           result = `Payment failed`;
         }
